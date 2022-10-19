@@ -6,8 +6,14 @@ use App\AreaGuidesMain;
 use App\ManageText;
 use App\AreaGuides;
 use App\SalesBuyGuidesMain;
+use App\BannerImage;
 use App\Mail\SubscribeUsNotification;
+use App\About;
+use App\AboutSection;
 use Auth;
+use App\Navigation;
+use App\Overview;
+use App\Partner;
 use App\User;
 use DB;
 use Schema;
@@ -18,10 +24,8 @@ class GuidesController extends Controller
     //area guides
     public function index(Request $request){
         $banner_image=AreaGuidesMain::find(3);
-        $areaguides=AreaGuides::paginate();
-        if($request->ajax()){
-          return  $areaguides;
-      }
+        $areaguides=AreaGuides::get();
+        // dd($areaguides);
         $seo_text=SeoText::find(6);
         $websiteLang=ManageText::all();
         return view('user.guides.index',compact('banner_image','seo_text','areaguides'));
@@ -84,5 +88,17 @@ class GuidesController extends Controller
           }
       }
       return Response($output);
+  }
+  //loancalculation
+  public function loancalculation(){
+    $about=About::first();
+    $banner_image=BannerImage::find(2);
+    $overviews=Overview::where('status',1)->get();
+    $partners=Partner::where('status',1)->get();
+    $sections=AboutSection::all();
+    $seo_text=SeoText::find(3);
+    $menus=Navigation::all();
+    $websiteLang=ManageText::all();
+    return view('user.guides.loan_calculation',compact('about','banner_image','overviews','partners','sections','seo_text','menus','websiteLang'));
   }
 }

@@ -251,7 +251,7 @@
 
                         <li><a class="dropdown-item" href="{{ route('sale.buy.guides')}}">Sale/Buy Guides</a></li>
   
-                        <li><a class="dropdown-item" href="{{ route('properties',['page_type' => 'list_view','sorting_id'=>4]) }}">Loan Calculater</a></li>
+                        <li><a class="dropdown-item" href="{{ route('loan.calculation')}}">Loan Calculater</a></li>
                     </ul>
                 </li>
            {{--  @php

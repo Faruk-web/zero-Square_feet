@@ -117,7 +117,7 @@ Route::get('/area/guides/gallery/{id}',[GuidesController::class,'gallery'])->nam
 Route::get('/sale/buy/guides',[GuidesController::class,'salebuyguides'])->name('sale.buy.guides');
 Route::get('/sales/guides',[GuidesController::class,'saleguides'])->name('sales.guides');
 Route::get('/buy/guides',[GuidesController::class,'buyguides'])->name('buy.guides');
-
+Route::get('/loan/calculation',[GuidesController::class,'loancalculation'])->name('loan.calculation');
 Route::get('/search/guides', [GuidesController::class, 'search_guides']);
 
 Route::get('/pricing-plan',[HomeController::class,'pricingPlan'])->name('pricing.plan');

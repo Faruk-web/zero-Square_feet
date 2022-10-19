@@ -11,4 +11,8 @@ class AreaGuidesMain extends Model
     protected $fillable=[
         'name','image'
     ];
+    public function AreaGuides()
+    {
+        return $this->hasMany(AreaGuides::class, 'main_area_id', 'id');
+    }
 }
