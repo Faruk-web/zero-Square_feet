@@ -28,7 +28,7 @@
 .razorpay-payment-button,
 .wsus__search_categoy ul li a span,
 .wsus__my_property .actions ul li a {
-    background: {{ $setting->theme_one }} !important;
+    background: rgb(188, 209, 48); !important;
 }
 
 .wsus__footer_content form button:hover{
@@ -37,20 +37,20 @@
 
 .wsus__single_property_search_check .form-check-input:checked,
 .dash_aminities .form-check-input:checked {
-	background-color: {{ $setting->theme_one }} !important;
-	border-color: {{ $setting->theme_one }} !important;
+	background-color:rgb(188, 209, 48); !important;
+	border-color:rgb(188, 209, 48); !important;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .nav-link:hover,
 .wsus__pagination .page-link:hover,
 .wsus__pagination .page-link.active {
-    background-color: {{ $setting->theme_one }} !important;
+    background-color: rgb(188, 209, 48); !important;
 }
 
 .wsus__banner .slick-dots li.slick-active button,
 .wsus__testimonial .slick-dots li.slick-active button {
-    background: {{ $setting->theme_one }} !important;
+    background: rgb(188, 209, 48); !important;
 }
 
 .wsus__banner .slick-dots li button, .wsus__testimonial .slick-dots li button {
@@ -80,7 +80,7 @@
 .wsus__dash_info_text a i,
 .wsus__dash_info_text p i,
 .wsus__dash_info_text a:hover {
-    color: {{ $setting->theme_one }} !important;
+    color: rgb(188, 209, 48); !important;
 }
 
 .breadcrumb-item.active{
@@ -95,7 +95,7 @@
 .main_menu .dropdown-menu li a:hover,
 .main_menu .dropdown-menu li a.active  {
 	color: #fff;
-    background-color: {{ $setting->theme_one }} !important;;
+    background-color: {{ $setting->theme_one }} !important;
 }
 
 

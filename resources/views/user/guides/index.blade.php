@@ -7,7 +7,14 @@
 @endsection
 
 @section('user-content')
-
+<style>
+    .search-box{
+        margin-left:294px;
+        /* background-color: green; */
+        /* margin: -1px; */
+        margin-right:250px;
+    }
+</style>
   <!--===BREADCRUMB PART START====-->
   <section class="wsus__breadcrumb" style="background: url({{asset('uploads/areaguides/'.$banner_image->image) }});">
     <div class="wsus_bread_overlay">
@@ -16,13 +23,13 @@
                 <div class="col-12 text-center">
                     <h4>Discover Bangladesh!</h4>
                     <nav style="--bs-breadcrumb-divider: '-';margin: 100px;" aria-label="breadcrumb">
-                    <div class="row large_subscribe">
-                        <div class="col-xl-4 col-lg-5">
-                            <div class="large_subscribe_text">
+                    <div class="row large_subscribe_search">
+                        <div class="col-xl-3 col-lg-4">
+                            <div class="large_subscribe_search_text">
                                 <h4 class="">Search Location</h4>
                             </div>
                         </div>
-                        <div class="col-xl-8 pe-0 col-lg-7">
+                        <div class="col-xl-9 pe-0 col-lg-8">
                             <form id="guides">
                             <input type="text" placeholder="Location" name="Location" id="guides_search">
                             <button id="guides" type="submit"><i  class="loading-icon fa fa-spin fa-spinner d-none mt-1"></i>  <i id="guides" class="fal fa-angle-right"></i></button>
@@ -30,7 +37,7 @@
                         </div>
                     </div>
                      <!--===BREADCRUMB PART START====-->
-                           <div class="row mr-2" id="guides_show_info" style="margin-left: 314px;">
+                           <div class="row search-box" id="guides_show_info">
                                 <div class="col-12 text-center">
                                     <h4 id="project_name"> </h4>
                                     <nav style="--bs-breadcrumb-divider: '-';margin: 100px;" aria-label="breadcrumb">

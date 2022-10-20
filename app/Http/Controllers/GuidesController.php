@@ -74,13 +74,13 @@ class GuidesController extends Controller
         if(!empty($guides_info)) {
             if(count($areaguides) > 0) {
               foreach ($areaguides as $areaguide) {
-                  $output.='<tr>
-                      <td>
-                        <a href="'.route('guides.gallery', $areaguide->id).'">
-                            <button type="button" onclick="setguidesInfo(\''.$areaguide->id.'\', \''.$areaguide->title.'\')">'.$areaguide->title.'</button>
+                  $output.='
+                     <dive style="background-color:#bcd130;margin-left: 30px;"> 
+                        <a href="'.route('guides.gallery', $areaguide->id).'" onclick="setguidesInfo(\''.$areaguide->id.'\', \''.$areaguide->title.'\')">
+                        <h2>'.$areaguide->title.'</h2>
                         </a>
-                      </td>
-                      </tr>';
+                      </dive>
+                     ';
                   }
             }
             else {
