@@ -96,6 +96,7 @@ return array(
     'App\\Http\\Controllers\\Auth\\VerificationController' => $baseDir . '/app/Http/Controllers/Auth/VerificationController.php',
     'App\\Http\\Controllers\\ContactController' => $baseDir . '/app/Http/Controllers/ContactController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
+    'App\\Http\\Controllers\\GuidesController' => $baseDir . '/app/Http/Controllers/GuidesController.php',
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
     'App\\Http\\Controllers\\Staff\\Auth\\StaffForgotPasswordController' => $baseDir . '/app/Http/Controllers/Staff/Auth/StaffForgotPasswordController.php',
     'App\\Http\\Controllers\\Staff\\Auth\\StaffLoginController' => $baseDir . '/app/Http/Controllers/Staff/Auth/StaffLoginController.php',

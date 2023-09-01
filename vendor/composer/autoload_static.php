@@ -705,6 +705,7 @@ class ComposerStaticInit430f8f03113d135ad10b9b4adc0ce375
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\ContactController' => __DIR__ . '/../..' . '/app/Http/Controllers/ContactController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\GuidesController' => __DIR__ . '/../..' . '/app/Http/Controllers/GuidesController.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\Staff\\Auth\\StaffForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Staff/Auth/StaffForgotPasswordController.php',
         'App\\Http\\Controllers\\Staff\\Auth\\StaffLoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Staff/Auth/StaffLoginController.php',
